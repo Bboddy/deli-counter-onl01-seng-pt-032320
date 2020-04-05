@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 def line(katz_deli)
   if katz_deli.empty?
     puts "The line is currently empty."   
@@ -17,5 +18,12 @@ def now_serving(katz_deli)
   else
     puts "Currently serving #{katz_deli[0]}."
     katz_deli.shift
+=======
+def line(deli_Line)
+  if deli_Line == 0
+    puts "The line is currently empty."
+  else
+    deli_Line.each_with_index {|name, index| puts "The line is currently: #{index}. #{name}"}
+>>>>>>> 3e7e20dafed4b57a23b3efcedbd1dae2440512bf
   end
 end
